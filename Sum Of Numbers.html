@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Sum Of Numbers</title>
+    <h1>Add Your Figures With Ease</h1>
+  <style>
+  body{
+  background-color: rgb(25, 25, 87);
+  
+  }
+  </style>
+</head>
+<body>
+   <p class="input">
+ <input id="num-one" style="padding: 10px; border-color: blue; border-radius: 5px;"> + <input id="num-two" style="padding: 10px; border-color: blue; border-radius: 5px;"> + <input id="num-three" style="padding: 10px; border-color: blue; border-radius: 5px;"> + <input id="num-four" style="padding: 10px; border-color: blue; border-radius: 5px;"> + <input id="num-five" style="padding: 10px; border-color: blue; border-radius: 5px;">+
+ <input id="num-six" style="padding: 10px; border-color: blue; border-radius: 5px;"> + <input id="num-seven" style="padding: 10px; border-color: blue; border-radius: 5px;"> + <input id="num-eight" style="padding: 10px; border-color: blue; border-radius: 5px;"> + <input id="num-nine" style="padding: 10px; border-color: blue; border-radius: 5px;"> + <input id="num-ten" style="padding: 10px; border-color: blue; border-radius: 5px;">  
++ <input id="num-eleven" style="padding: 10px; border-color: blue; border-radius: 5px;"> + <input id="num-twelve" style="padding: 10px; border-color: blue; border-radius: 5px;"> + <input id="num-thirteen" style="padding: 10px; border-color: blue; border-radius: 5px;"> + <input id="num-forteen" style="padding: 10px; border-color: blue; border-radius: 5px;"> + <input id="num-fifteen" style="padding: 10px; border-color: blue; border-radius: 5px;">+
+<input id="num-sixteen" style="padding: 10px; border-color: blue; border-radius: 5px;"> + <input id="num-seventeen" style="padding: 10px; border-color: blue; border-radius: 5px;"> + <input id="num-eighteen" style="padding: 10px; border-color: blue; border-radius: 5px;"> + <input id="num-nineteen" style="padding: 10px; border-color: blue; border-radius: 5px;"> + <input id="num-twenty" style="padding: 10px; border-color: blue; border-radius: 5px;">  
+</p> 
+   <p id="add-sum"></p>
+<h2>Subtract Your Figures Here</h2>
+<p id="subtract">
+  <input id="number-one" style="padding: 10px; border-color: blue; border-radius: 5px;"> - <input id="number-two" style="padding: 10px; border-color: blue; border-radius: 5px;"> - <input id="number-three" style="padding: 10px; border-color: blue; border-radius: 5px;"> - <input id="number-four" style="padding: 10px; border-color: blue; border-radius: 5px;"> - <input id="number-five" style="padding: 10px; border-color: blue; border-radius: 5px;"> -
+  <input id="number-six" style="padding: 10px; border-color: blue; border-radius: 5px;"> - <input id="number-seven" style="padding: 10px; border-color: blue; border-radius: 5px;"> - <input id="number-eight" style="padding: 10px; border-color: blue; border-radius: 5px;"> -<input id="number-nine" style="padding: 10px; border-color: blue; border-radius: 5px;"> - <input id="number-ten" style="padding: 10px; border-color: blue; border-radius: 5px;">
+</p>
+<p id="sub-fig"></p>
+   <script>
+   var numOne=document.getElementById("num-one");
+   var numTwo=document.getElementById("num-two");
+   var numThree=document.getElementById("num-three");
+   var numFour=document.getElementById("num-four");
+   var numFive=document.getElementById("num-five");
+   var numSix=document.getElementById("num-six");
+   var numSeven=document.getElementById("num-seven");
+   var numEight=document.getElementById("num-eight");
+   var numNine=document.getElementById("num-nine");
+   var numTen=document.getElementById("num-ten");
+   var numEleven=document.getElementById("num-eleven");
+   var numTwelve=document.getElementById("num-twelve");
+   var numThirteen=document.getElementById("num-thirteen");
+   var numForteen=document.getElementById("num-forteen");
+   var numFifteen=document.getElementById("num-fifteen");
+   var numSixteen=document.getElementById("num-sixteen");
+   var numSeventeen=document.getElementById("num-seventeen");
+   var numEighteen=document.getElementById("num-eighteen");
+   var numNineteen=document.getElementById("num-nineteen");
+   var numTwenty=document.getElementById("num-twenty");
+   var addSum=document.getElementById("add-sum");
+   numOne.addEventListener("input",add);
+   numTwo.addEventListener("input",add);
+   numThree.addEventListener("input",add);
+   numFour.addEventListener("input",add);
+   numFive.addEventListener("input",add);
+   numSix.addEventListener("input",add);
+   numSeven.addEventListener("input",add);
+   numEight.addEventListener("input",add);
+   numNine.addEventListener("input",add);
+   numTen.addEventListener("input",add);
+   numEleven.addEventListener("input",add);
+   numTwelve.addEventListener("input",add);
+   numThirteen.addEventListener("input",add);
+   numForteen.addEventListener("input",add);
+   numFifteen.addEventListener("input",add);
+   numSixteen.addEventListener("input",add);
+   numSeventeen.addEventListener("input",add);
+   numEighteen.addEventListener("input",add);
+   numNineteen.addEventListener("input",add);
+   numTwenty.addEventListener("input",add);
+   function add() {
+    var one = parseFloat(numOne.value) ||0;
+    var two = parseFloat(numTwo.value) ||0;
+    var three = parseFloat(numThree.value) ||0;
+    var four = parseFloat(numFour.value) ||0;
+    var five = parseFloat(numFive.value) ||0;
+    var six = parseFloat(numSix.value) ||0;
+    var seven = parseFloat(numSeven.value) ||0;
+    var eight = parseFloat(numEight.value) ||0;
+    var nine = parseFloat(numNine.value) ||0;
+    var ten = parseFloat(numTen.value) ||0;
+    var eleven = parseFloat(numEleven.value) ||0;
+    var twelve = parseFloat(numTwelve.value) ||0;
+    var thirteen = parseFloat(numThirteen.value) ||0;
+    var forteen = parseFloat(numForteen.value) ||0;
+    var fifteen = parseFloat(numFifteen.value) ||0;
+    var sixteen = parseFloat(numSixteen.value) ||0;
+    var seventeen = parseFloat(numSeventeen.value) ||0;
+    var eighteen = parseFloat(numEighteen.value) ||0;
+    var nineteen = parseFloat(numNineteen.value) ||0;
+    var twenty = parseFloat(numTwenty.value) ||0;
+    var sum =one+two+three+four+five+six+seven+eight+nine+ten+eleven+twelve+thirteen+forteen+fifteen+sixteen+seventeen+eighteen+nineteen+twenty;
+    addSum.innerHTML = "Your sum is: "+ (one+two+three+four+five+six+seven+eight+nine+ten+eleven+twelve+thirteen+forteen+fifteen+sixteen+seventeen+eighteen+nineteen+twenty);
+   }
+   var numberOne=document.getElementById("number-one");
+   var numberTwo=document.getElementById("number-two");
+   var numberThree=document.getElementById("number-three");
+   var numberFour=document.getElementById("number-four");
+   var numberFive=document.getElementById("number-five");
+   var numberSix=document.getElementById("number-six");
+   var numberSeven=document.getElementById("number-seven");
+   var numberEight=document.getElementById("number-eight");
+   var numberNine=document.getElementById("number-nine");
+   var numberTen=document.getElementById("number-ten");
+   var subFig=document.getElementById("sub-fig");
+   numberOne.addEventListener("input",sub);
+   numberTwo.addEventListener("input",sub);
+   numberThree.addEventListener("input",sub);
+   numberFour.addEventListener("input",sub);
+   numberFive.addEventListener("input",sub);
+   numberSix.addEventListener("input",sub);
+   numberSeven.addEventListener("input",sub);
+   numberEight.addEventListener("input",sub);
+   numberNine.addEventListener("input",sub);
+   numberTen.addEventListener("input",sub);
+  function sub() {
+    var one = parseFloat(numberOne.value) ||0;
+    var two = parseFloat(numberTwo.value) ||0;
+    var three = parseFloat(numberThree.value) ||0;
+    var four = parseFloat(numberFour.value) ||0;
+    var five = parseFloat(numberFive.value) ||0;
+    var six = parseFloat(numberSix.value) ||0;
+    var seven = parseFloat(numberSeven.value) ||0;
+    var eight = parseFloat(numberEight.value) ||0;
+    var nine = parseFloat(numberNine.value) ||0;
+    var ten = parseFloat(numberTen.value) ||0;
+    var sub =one-two-three-four-five-six-seven-eight-nine-ten;
+    subFig.innerHTML = "Your answer is: "+ (one-two-three-four-five-six-seven-eight-nine-ten)
+  }
+</script>
+</body>
+</html>
